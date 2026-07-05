@@ -1,53 +1,176 @@
-# 🤖 DecoBot v2.0 — Rule-Based AI Chatbot
+# 🤖 DecoBot v2.0 – Rule-Based AI Chatbot
 
-A rule-based AI chatbot built in Python as part of the **DecodeLabs Internship – AI Project 1**. DecoBot understands user intent through keyword matching, fuzzy matching (typo tolerance), and remembers the user's name during a session.
+A professional rule-based AI chatbot built in Python as part of the DecodeLabs AI Internship. DecoBot uses intent recognition, fuzzy matching, user memory, and chat history logging to provide an interactive command-line chatbot experience.
 
-## ✨ Features
+---
 
-- **Intent-based responses** — recognizes topics like greetings, AI/Python/ML knowledge, jokes, and coding tips
-- **Fuzzy matching** — tolerates small typos (e.g., "helo" → "hello")
-- **Word-boundary keyword detection** — avoids false matches (e.g., "ai" won't trigger inside unrelated words)
-- **Name memory** — detects "my name is ___" and remembers it for the session
-- **Dynamic help command** — automatically lists all available topics
-- **Chat history logging** — saves the full conversation to `chat_history.json` after each session
-- **Colored terminal output** for a cleaner CLI experience
+## 📌 Features
 
-## 🛠️ Requirements
+- 👋 Greeting & Conversation Support
+- 🧠 Intent Recognition System
+- 🔍 Fuzzy Matching for Typing Mistakes
+- 👤 User Name Memory
+- 📚 Knowledge Base (AI, Python, Machine Learning)
+- 😂 Built-in Programming Jokes
+- 💡 Coding Tips
+- 📜 Chat History Logging (JSON)
+- 🎨 Colored Terminal Interface
+- 📊 Session Statistics
+- ❌ Graceful Exit Handling
 
-- Python 3.7+
-- No external libraries required (uses only the standard library)
+---
 
-## ▶️ How to Run
+## 🛠 Technologies Used
 
-```bash
-python3 decobot.py
-```
+- Python 3
+- Regular Expressions (`re`)
+- JSON
+- Random Module
+- Datetime
+- Difflib (Fuzzy Matching)
+- Object-Oriented Programming (OOP)
 
-## 💬 Example Commands
+---
 
-| Input | Response Type |
-|---|---|
-| `hello` | Greeting |
-| `what is AI` | AI knowledge |
-| `what is python` | Python knowledge |
-| `joke` | Random joke |
-| `my name is Ali` | Remembers your name |
-| `help` | Lists all topics you can ask about |
-| `quit` | Ends the session and shows a summary |
-
-## 📁 Project Structure
+## 📂 Project Structure
 
 ```
-decobot-ai-chatbot/
-├── decobot.py          # Main chatbot script
-├── chat_history.json   # Auto-generated conversation log (ignored in git)
+.
+├── My Chatbot.py
+├── chat_history.json      # Generated automatically
 └── README.md
 ```
 
-## 👤 Author
+---
 
-Muhammad Talha— DecodeLabs Internship, AI Project 1
+## 🚀 Getting Started
 
-## 📄 License
+### Clone the Repository
 
-This project is for educational purposes as part of an internship assignment.
+```bash
+git clone https://github.com/yourusername/decobot.git
+```
+
+### Navigate to the Project
+
+```bash
+cd decobot
+```
+
+### Run the Chatbot
+
+```bash
+python "My Chatbot.py"
+```
+
+---
+
+## 💬 Example Conversation
+
+```text
+============================================================
+Welcome to DecoBot v2.0 🤖 — DecodeLabs AI Pro
+Type 'help' | 'quit' to exit | Tell me your name
+============================================================
+
+You: hello
+
+DecoBot:
+Hello! I am DecoBot v2.0 🤖
+How can I help you today?
+
+You:
+my name is Talha
+
+DecoBot:
+Nice to meet you, Talha! I'll remember that. 😊
+
+You:
+what is python
+
+DecoBot:
+Python is a high-level, easy-to-learn language used in AI, web development, and data science.
+
+You:
+quit
+
+DecoBot:
+Goodbye! Keep building amazing things. See you! 👋
+```
+
+---
+
+## 📖 Supported Commands
+
+- hello
+- hi
+- hey
+- help
+- what is AI
+- what is Python
+- what is Machine Learning
+- tell me a joke
+- coding tips
+- my name is ...
+- thanks
+- quit
+
+---
+
+## 📜 Chat History
+
+Every conversation is automatically saved in:
+
+```
+chat_history.json
+```
+
+Each interaction includes:
+
+- Timestamp
+- User Message
+- Bot Response
+
+---
+
+## 🎯 Learning Concepts
+
+This project demonstrates:
+
+- Object-Oriented Programming
+- Rule-Based AI
+- Intent Classification
+- Fuzzy String Matching
+- JSON Data Storage
+- File Handling
+- Exception Handling
+- Regular Expressions
+- Python Best Practices
+
+---
+
+## 🔮 Future Improvements
+
+- NLP Integration
+- Voice Recognition
+- GUI Version (Tkinter/PyQt)
+- Database Support
+- OpenAI API Integration
+- Multi-language Support
+- Web Version (Flask/FastAPI)
+
+---
+
+## 👨‍💻 Author
+
+**Muhammad Talha**
+
+AI & Python Developer
+
+---
+
+## ⭐ Show Your Support
+
+If you found this project helpful, please consider giving it a ⭐ on GitHub.
+
+It motivates future development and improvements.
